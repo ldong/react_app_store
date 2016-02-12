@@ -2,7 +2,7 @@
 
 Author: Lin Dong
 
-Note: [BitTiger](http://bittiger.io) React Project
+Note: [BitTiger](http://bittiger.io) React Project <img src="./screenshots/logo.png" alt="BitTiger" style="width: 42px;"/>
 
 ##Recap
 
@@ -49,3 +49,8 @@ Clickable Link: [App Store Mockups](https://invis.io/AH604TLWV)
 
 # Special Thanks
 1. Mockups are extraced from [BitTiger AppStore in Meteor](https://github.com/BitTiger/meteorjs_app_store)
+
+
+## Please follow us on Wechat <img src="./screenshots/logo.png" alt="BitTiger" style="width: 42px;"/>
+
+![](./screenshots/wechat.png)
