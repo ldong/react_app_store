@@ -11,10 +11,21 @@ class MainLayout extends Component {
     console.log(data);
 	const dataString = JSON.stringify(data);
 
-    return <div>
-		<Header />
-		<ContentView />
-	</div>
+    return (
+      <div>
+        <div className="row">
+          <div className="one-third column offset-by-one-third">
+            <Header />
+          </div>
+        </div>
+  		
+        <div className="row">
+          <div className="three columns offset-by-two">
+            <ContentView />
+          </div>
+        </div>
+  	 </div>
+    )
   }
 }
 
