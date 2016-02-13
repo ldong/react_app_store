@@ -8,6 +8,8 @@ import data from '../data/data.json';
 class MainLayout extends Component {
 
   render() {
+    console.log(data);
+	const dataString = JSON.stringify(data);
 
     return <div>
 		<Header />
