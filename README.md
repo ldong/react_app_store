@@ -18,7 +18,7 @@ Last time, we have introduce React and JSX, this time we need to implement a sim
 
 ![](./screenshots/2_merged.png)
 
-Clickable Link: [App Store Mockups](https://invis.io/AH604TLWV)
+Clickable Link: [App Store Mockups](https://projects.invisionapp.com/share/AH604TLWV#/screens/134878446)
 
 ##Task Breakdown
 ###Think top down, build bottom up
