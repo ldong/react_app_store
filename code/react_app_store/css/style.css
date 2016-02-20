@@ -1,0 +1,39 @@
+.get {
+  border-style: solid;
+  border-color: #8EB8D8;
+  border-width: 1px;
+  padding: 4px;
+  text-align: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+/*
+  Ratings Stars
+  (with as little code as possible)
+  https://css-tricks.com/star-ratings/
+*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span,
+.rating > span ~ span {
+  color: transparent;
+}
+.rating > span:before,
+.rating > span ~ span:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: gold;
+}

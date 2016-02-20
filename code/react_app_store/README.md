@@ -6,7 +6,7 @@ Date: Sat Feb 13, 2016
 
 ## Instruction
 
-```
+```bash
 npm install
 npm install webpack-dev-server@1.12.1 -g
 webpack-dev-server --progress --colors

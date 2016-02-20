@@ -2,32 +2,29 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Header.jsx'
-import ContentView from './ContentView.jsx'
+import ContentListView from './ContentListView.jsx'
 import data from '../data/data.json';
 
 class MainLayout extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [... data]
+    }
+  }
+
   render() {
     console.log(data);
-	const dataString = JSON.stringify(data);
+  	const dataString = JSON.stringify(data);
 
     return (
       <div>
-        <div className="row">
-          <div className="one-third column offset-by-one-third">
-            <Header />
-          </div>
-        </div>
-  		
-        <div className="row">
-          <div className="three columns offset-by-two">
-            <ContentView />
-          </div>
-        </div>
+        <Header />
+        <ContentListView data={this.state.data}/>
   	 </div>
     )
   }
 }
-
 
 ReactDOM.render(<MainLayout/>, document.getElementById('main'));
