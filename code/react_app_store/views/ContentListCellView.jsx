@@ -37,7 +37,7 @@ export default class ContentListCellView extends Component {
     };
 
     return (
-      <div className="row">
+      <div className="row content-list-cell-view">
         <div className="two-thirds column">
           <div className="row">
             
