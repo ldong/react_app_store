@@ -19,6 +19,26 @@
   height: 60px;
 }
 
+.developerInfo {
+  color: gray;
+  font-size: 10pt;
+}
+
+.descriptionLabel {
+  font-weight: 800;
+  font-size: 11pt;
+}
+
+.descriptionText {
+  color: gray;
+  font-size: 10pt;
+}
+
+.customerLabel {
+  font-weight: 800;
+  font-size: 11pt;
+}
+
 /*
   Ratings Stars
   (with as little code as possible)

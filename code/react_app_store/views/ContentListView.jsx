@@ -5,19 +5,16 @@ export default class ContentListView extends Component {
 
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(data, e) {
-    console.log('clicked from contentList view');
-    // data passed in
   }
 
   render() {
+    const maxNumberOfItems = 9;
     const list = this.props.data.map((element, index) => {
-        if(index > 10)
+        if (index > maxNumberOfItems) {
           return; 
-        return <ContentListCellView data={element} key={index} handleClick={this.handleClick} />
+        } else {
+          return <ContentListCellView data={element} key={index} handleClick={this.props.handleClick} />
+        }
     });
 
     return (

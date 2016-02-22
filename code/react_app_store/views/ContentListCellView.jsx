@@ -9,8 +9,7 @@ export default class ContentListCellView extends Component {
 
   onClick(data, e) {
     e.preventDefault();
-    console.log('clicked');
-    this.props.handleClick();
+    this.props.handleClick(data, e);
   }
 
   render() {

@@ -5,24 +5,25 @@ export default class Header extends Component {
 
   constructor(props) {
     super(props);
+    this.onClick = this.onClick.bind(this, this.props.data);
+
   }
 
-  goBack() {
-    if (window.history.length) {
-      window.history.back();
-    }
+  onClick(data, e) {
+    e.preventDefault();
+    this.props.handleClick(data, e);
   }
 
   render() {
+    const {isHeaderText} = this.props;
 
     return (
       <div className="row">
+          <div className="one-third column">
+            <h1></h1>
+          </div>
         <div className="one-third column">
-          <h1 onClick={this.goBack.bind(this)}>{'<'}</h1>
-        </div>
-
-        <div className="one-third column">
-          <h1>Top Charts</h1>
+          {isHeaderText ? <h1>Top Charts</h1> : <h1 onClick={this.onClick}>{'<'}</h1>}
         </div>
       </div>
     )
