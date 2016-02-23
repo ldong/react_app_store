@@ -22,7 +22,6 @@ class MainLayout extends Component {
   }
 
   changeToDetailView(data, e) {
-    console.log('changeToDetailView');
     this.setState({
       isHeaderText: false,
       detailData: data,
@@ -39,17 +38,14 @@ class MainLayout extends Component {
   }
 
   render() {
-    console.log(data);
-  	const dataString = JSON.stringify(data);
-
     const {isDetailView, isHeaderText} = this.state;
-    const contentCellView = <ContentListView data={this.state.data} handleClick={this.changeToDetailView} />
+    const contentListView = <ContentListView data={this.state.data} handleClick={this.changeToDetailView} />
     const contentDetailView = <ContentDetailView data={this.state.data} detailData={this.state.detailData} />
 
     return (
       <div>
         <Header isHeaderText={isHeaderText} handleClick={this.changeToListView} />
-        {isDetailView ? contentDetailView : contentCellView}
+        {isDetailView ? contentDetailView : contentListView}
   	 </div>
     )
   }
